@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="text-center">
-                                            <button class="btn btn-dark w-100 mt-4 mb-3" type="button">Registrarse</button>
+                                            <button class="btn btn-dark w-100 mt-4 mb-3" type="button" id="btnCreate">Registrarse</button>
                                         </div>
                                     </div>
                                 </form>
@@ -87,7 +87,7 @@
                             <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                 <p class="mb-4 text-xs mx-auto">
                                     ¿Ya tienes una cuenta?
-                                    <a href="javascript:;" class="text-dark font-weight-bold">Iniciar sesión</a>
+                                    <a href="../Auth/login" class="text-dark font-weight-bold">Iniciar sesión</a>
                                 </p>
                             </div>
                         </div>
@@ -98,5 +98,8 @@
     </section>
 </main>
 
-
-<?php require_once(__DIR__ . '/layouts/footer.php'); ?>
+<?php
+require_once(__DIR__ . '/scripts/list.php');
+require_once(__DIR__ . '/scripts/create.php');
+require_once(__DIR__ . '/layouts/footer.php');
+?>

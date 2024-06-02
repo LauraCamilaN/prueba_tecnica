@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse px-4  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link  active" href="../pages/dashboard.html">
+                <a class="nav-link  active" href="../Home/index">
                     <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
                         <iconify-icon icon="material-symbols:home" width="20" height="20" style="color: white">
                         </iconify-icon>
@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="../pages/tables.html">
+                <a class="nav-link  " href="../UserHistory/index">
                     <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
                         <iconify-icon icon="gis:globe-users" width="20" height="20" style="color: white"></iconify-icon>
                     </div>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="../pages/tables.html">
+                <a class="nav-link" href="../Ticket/index">
                     <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
                         <iconify-icon icon="streamline:tickets" width="20" height="20" style="color: white">
                         </iconify-icon>

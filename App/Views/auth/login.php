@@ -28,7 +28,7 @@
                             <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                 <p class="mb-4 text-xs mx-auto">
                                     ¿No tienes una cuenta?
-                                    <a href="" class="text-dark font-weight-bold">Requistrate aquí</a>
+                                    <a href="../Auth/Register" class="text-dark font-weight-bold">Requistrate aquí</a>
                                 </p>
                             </div>
                         </div>
