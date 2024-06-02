@@ -21,10 +21,10 @@
                                             <p class="text-sm text-dark mb-0">${user['company_name']}</p>
                                         </td>
                                         <td class="align-middle">
-                                            <a href="../UserHistory/edit/?id=${user['id_user_stories']}" class="btn btn-info btn-sm" data-bs-toggle="tooltip">
+                                            <a href="../UserHistory/edit/?id=${user['id_user_stories']}" class="btn btn-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Editar" data-container="body" data-animation="true">
                                                 <iconify-icon icon="clarity:edit-solid" width="15" height="15"  style="color: with"></iconify-icon>
                                             </a>
-                                            <a href="../UserHistory/show/?id=${user['id_user_stories']}" class="btn btn-primary btn-sm" data-bs-toggle="tooltip">
+                                            <a href="../UserHistory/show/?id=${user['id_user_stories']}" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver" data-container="body" data-animation="true">
                                             <iconify-icon icon="carbon:view-filled" width="15" height="15"  style="color: white"></iconify-icon>
                                             </a>
                                         </td>

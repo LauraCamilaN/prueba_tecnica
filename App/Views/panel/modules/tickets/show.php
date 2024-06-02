@@ -87,8 +87,7 @@
                 <div class="card-header border-bottom pb-0">
                     <div class="d-sm-flex align-items-center">
                         <div>
-                            <h6 class="font-weight-semibold text-lg mb-0">Edición de Ticket</h6>
-                            <p class="text-sm">A continuación visualizara información sobre las historias de usuario a la que desea asociar el ticket.</p>
+                            <h6 class="font-weight-semibold text-lg mb-0">Visualización de Ticket</h6>
                         </div>
                         <div class="ms-auto d-flex">
                             <a type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2" href="../../Ticket/index">
@@ -101,10 +100,8 @@
                     <form>
                         <div class="row mb-4">
                             <div class="col">
-                                <label for="">Historia de Usuario <span class="text-danger">*</span></label>
-                                <select name="history" id="history" class="form-control">
-                                    <option value="" disabled>Seleccione una opción...</option>
-                                </select>
+                                <label for="">Historia de Usuario </label>
+                                <input type="text" class="form-control" id="history" name="history" disabled>
                             </div>
                             <div class="col">
                                 <label for="" class="form-label">Usuario registro</label>
@@ -123,19 +120,12 @@
                         </div>
                         <div class="row mb-4">
                             <div class="col">
-                                <label for="" class="form-label">Estado Ticket <span class="text-danger">*</span></label>
-                                <select name="status" id="status" class="form-control">
-                                    <option value="" disabled>Seleccione una opción...</option>
-                                </select>
+                                <label for="" class="form-label">Estado Ticket </label>
+                                <input type="text" class="form-control" id="status" name="status" disabled>
                             </div>
                             <div class="col">
-                                <label for="" class="form-label">Comentarios Ticket<span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="comments" name="comments">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center">
-                                <button type="button" class="btn btn-dark" id="btnEdit">ACTUALIZAR</button>
+                                <label for="" class="form-label">Comentarios Ticket</label>
+                                <input type="text" class="form-control" id="comments" name="comments" disabled>
                             </div>
                         </div>
                     </form>
@@ -159,7 +149,7 @@
         </div>
     </main>
     <!--   Core JS Files   -->
-    <?php require_once(__DIR__ . '/scripts/edit.php'); ?>
+    <?php require_once(__DIR__ . '/scripts/show.php'); ?>
     <script src="../../../../../Public/assets/js/plugins/swiper-bundle.min.js" type="text/javascript"></script>
     <script src="../../../../../Public/assets/js/core/popper.min.js"></script>
     <script src="../../../../../Public/assets/js/core/bootstrap.min.js"></script>

@@ -72,4 +72,11 @@ class Orm
         $stm->bindValue(":id", $id);
         $stm->execute();
     }
+
+    public function deleted($id)
+    {
+        $stm = $this->db->prepare("DELETE FROM {$this->table} WHERE id = :id");
+        $stm->bindValue(":id", $id);
+        $stm->execute();
+    }
 }
