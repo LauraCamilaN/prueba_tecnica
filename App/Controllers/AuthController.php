@@ -85,6 +85,17 @@ class AuthController extends Controller
         echo json_encode($data);
     }
 
+    public function duplicateUser()
+    {
+        $email = $_GET['email'];
+
+        $user = $this->userModel->duplicate($email);
+
+        if ($user) {
+            echo json_encode($user);
+        }
+    }
+
     public function registerUser()
     {
         $input = file_get_contents('php://input');

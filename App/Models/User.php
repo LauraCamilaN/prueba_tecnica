@@ -10,12 +10,25 @@ class User extends Orm
         parent::__construct('id', 'users', $conex);
     }
 
-    public function user($email,)
+    public function user($email)
     {
         $sql = $this->db->prepare('SELECT * FROM users WHERE email = :email');
         $sql->bindValue(":email", $email);
         $sql->execute();
 
         return $sql->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function duplicate($email)
+    {
+        $sql = $this->db->prepare('SELECT * FROM users WHERE email = :email');
+        $sql->bindValue(":email", $email);
+        $sql->execute();
+
+        if ($sql->rowCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

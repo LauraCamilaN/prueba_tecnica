@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../Ticket/index">
+                    <a class="nav-link" href="../../Ticket/index">
                         <div class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
                             <iconify-icon icon="streamline:tickets" width="20" height="20" style="color: white">
                             </iconify-icon>

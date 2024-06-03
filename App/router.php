@@ -26,7 +26,7 @@ class Router
 
     private function checkAuthentication()
     {
-        if (!isset($_SESSION['name_user']) && $this->controller !== 'AuthController' && !in_array($this->method, ['login', 'auth', 'register', 'getStates', 'getCities', 'getCompanies', 'registerUser'])) {
+        if (!isset($_SESSION['name_user']) && $this->controller !== 'AuthController' && !in_array($this->method, ['login', 'auth', 'register', 'getStates', 'getCities', 'getCompanies', 'registerUser', 'duplicateUser'])) {
             require_once(__DIR__ . '/Views/auth/login.php');
             exit();
         }

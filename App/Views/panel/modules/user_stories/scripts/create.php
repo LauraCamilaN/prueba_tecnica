@@ -53,7 +53,6 @@
         if (field) {
 
             let data = {
-                user: 1,
                 project: document.getElementById('project').value,
                 description: document.getElementById('description').value
             }

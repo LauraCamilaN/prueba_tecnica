@@ -61,7 +61,7 @@ class UserHistoryController extends Controller
 
         $this->userHistoryModel->create([
             'description' => $data['description'],
-            'user_id' => $data['user'],
+            'user_id' => $_SESSION['user_id'],
             'project_id' => $data['project']
         ]);
     }
