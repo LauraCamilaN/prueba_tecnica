@@ -2,6 +2,7 @@
 
 require_once(__DIR__ . '/../Models/Ticket.php');
 require_once(__DIR__ . '/../Models/UserHistory.php');
+require_once(__DIR__ . '/AuthController.php');
 
 class TicketController extends Controller
 {
@@ -10,6 +11,10 @@ class TicketController extends Controller
 
     public function __construct(PDO $conex)
     {
+        if (!isset($_SESSION['name_user'])) {
+            $this->render('auth', '', 'login');
+            exit();
+        }
         $this->ticketModel = new Ticket($conex);
         $this->histoyUserModel = new UserHistory($conex);
     }

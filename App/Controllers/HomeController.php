@@ -14,6 +14,10 @@ class HomeController extends Controller
 
     public function __construct(PDO $conex)
     {
+        if (!isset($_SESSION['name_user'])) {
+            $this->render('auth', '', 'login');
+            exit();
+        }
         $this->companyModel = new Company($conex);
         $this->projectModel = new Project($conex);
         $this->userModel = new User($conex);

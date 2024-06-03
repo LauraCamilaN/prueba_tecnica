@@ -37,10 +37,6 @@
                                     </div>
                                     <div class="row mb-4">
                                         <div class="col">
-                                            <label for="" class="form-label">Fecha de nacimiento</label>
-                                            <input type="date" class="form-control" id="birthdate" name="birthdate">
-                                        </div>
-                                        <div class="col">
                                             <label for="" class="form-label">Número de contacto <span class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="phone" name="phone">
                                         </div>

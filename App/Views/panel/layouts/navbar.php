@@ -7,7 +7,7 @@
             <ul class="navbar-nav  justify-content-end">
                 </li>
                 <li class="nav-item ps-2 d-flex align-items-center">
-                    <a class="btn btn-primary btn-sm">Cerrar Sesión</a>
+                    <a class="btn btn-primary btn-sm" href="../Auth/logout">Cerrar Sesión</a>
                 </li>
             </ul>
         </div>

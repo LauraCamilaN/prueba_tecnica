@@ -3,6 +3,7 @@
 require_once(__DIR__ . '/../Models/UserHistory.php');
 require_once(__DIR__ . '/../Models/Company.php');
 require_once(__DIR__ . '/../Models/Project.php');
+require_once(__DIR__ . '/AuthController.php');
 
 class UserHistoryController extends Controller
 {
@@ -12,6 +13,10 @@ class UserHistoryController extends Controller
 
     public function __construct(PDO $conex)
     {
+        if (!isset($_SESSION['name_user'])) {
+            $this->render('auth', '', 'login');
+            exit();
+        }
         $this->userHistoryModel = new UserHistory($conex);
         $this->companyModel = new Company($conex);
         $this->projectModel = new Project($conex);

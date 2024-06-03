@@ -11,24 +11,29 @@
                                 <p class="mb-0">¡Bienvenido de nuevo! Por favor ingrese sus datos.</p>
                             </div>
                             <div class="card-body">
-                                <form role="form">
+                                <form role="form" action="../Auth/auth" method="POST">
                                     <label>Correo electrónico</label>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Introduce tu dirección de correo electrónico" aria-label="Email" aria-describedby="email-addon" name="email" id="email">
                                     </div>
                                     <label>Contraseña</label>
                                     <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="Introduce tu contraseña" aria-label="Password" aria-describedby="password-addon">
+                                        <input type="password" class="form-control" placeholder="Introduce tu contraseña" aria-label="Password" aria-describedby="password-addon" id="password" name="password">
                                     </div>
+                                    <?php
+                                    if (isset($_SESSION['error'])) {
+                                    ?>
+                                        <div class="text-danger"><?php echo $_SESSION['error'] ?></div>
+                                    <?php } ?>
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-dark w-100 mt-4 mb-3">Ingresar</button>
+                                        <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Ingresar</button>
                                     </div>
                                 </form>
                             </div>
                             <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                 <p class="mb-4 text-xs mx-auto">
                                     ¿No tienes una cuenta?
-                                    <a href="../Auth/Register" class="text-dark font-weight-bold">Requistrate aquí</a>
+                                    <a href="../Auth/register" class="text-dark font-weight-bold">Requistrate aquí</a>
                                 </p>
                             </div>
                         </div>

@@ -30,7 +30,6 @@
             let data = {
                 names: document.getElementById('names').value,
                 last_names: document.getElementById('last_names').value,
-                birth_day: document.getElementById('birthdate').value,
                 phone: document.getElementById('phone').value,
                 department: document.getElementById('department').value,
                 city: document.getElementById('city').value,

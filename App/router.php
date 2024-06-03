@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 class Router
 {
@@ -19,7 +19,17 @@ class Router
         $this->method = !empty($url[2]) ? $url[2] : 'index';
         $this->controller = $this->controller . 'Controller';
 
+        $this->checkAuthentication();
+
         require_once(__DIR__ . '/Controllers/' . $this->controller . '.php');
+    }
+
+    private function checkAuthentication()
+    {
+        if (!isset($_SESSION['name_user']) && $this->controller !== 'AuthController' && !in_array($this->method, ['login', 'auth', 'register', 'getStates', 'getCities', 'getCompanies', 'registerUser'])) {
+            require_once(__DIR__ . '/Views/auth/login.php');
+            exit();
+        }
     }
 
     public function run()
