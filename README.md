@@ -1,1 +1,4 @@
-# prueba_tecnica
+# SEGUIMIENTO DE TICKETS
+# VERSIONES UTILIZADAS
+<p><b>PHP: </b></b>8.3.7</p>
+
